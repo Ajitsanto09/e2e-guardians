@@ -1,0 +1,92 @@
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  line-height: 1.4;
+  color: #111;
+  background: #fafafa;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  border: 1px solid #e6e6e6;
+  background: white;
+  border-radius: 14px;
+  position: sticky;
+  top: 16px;
+  z-index: 2;
+}
+
+.brand { font-weight: 800; cursor: pointer; }
+
+.nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.nav a.active { background: #f0f0f0; }
+
+.main { padding-top: 18px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  display: block;
+  padding: 14px 14px;
+  border: 1px solid #e6e6e6;
+  background: white;
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+}
+.badge.failed { border-color: #f0b4b4; background: #fff1f1; }
+.badge.investigating { border-color: #f0d69a; background: #fff7e3; }
+.badge.mitigated { border-color: #b5d9f0; background: #eef7ff; }
+.badge.resolved { border-color: #bde0c2; background: #f0fff2; }
+
+.muted { color: #666; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.link { color: #0b5fff; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+.btn {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn.active { background: #f0f0f0; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 10px; border-bottom: 1px solid #eee; text-align: left; }
+
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline li { padding: 10px 0; border-bottom: 1px solid #eee; }

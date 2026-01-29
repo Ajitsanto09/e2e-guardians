@@ -1,0 +1,15 @@
+{
+  "name": "e2e-guardians",
+  "private": true,
+  "workspaces": [
+    "apps/slack-bot",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:bot": "npm -w apps/slack-bot run dev",
+    "dev:web": "npm -w apps/web run dev",
+    "build": "npm -w apps/slack-bot run build && npm -w apps/web run build",
+    "lint": "npm -w apps/slack-bot run lint && npm -w apps/web run lint",
+    "format": "npm -w apps/slack-bot run format && npm -w apps/web run format"
+  }
+}
